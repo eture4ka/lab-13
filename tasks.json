@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++ build project",
+            "command": "g++",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "-std=c++17",
+                "${fileDirname}\\main.cpp",
+                "${fileDirname}\\Transistor.cpp",
+                "${fileDirname}\\StorageTransistor.cpp",
+                "-o",
+                "${fileDirname}\\main.exe"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": ["$gcc"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Компіляція всіх файлів проєкту"
+        }
+    ]
+}
